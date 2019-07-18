@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
        
-        stage('DeployToProduction') {
+        stage('ExecuteTests') {
             when {
                 branch 'master'
             }

@@ -7,7 +7,7 @@ pipeline {
                 branch 'master'
             }
             steps {
-                input 'Execute Tests?'
+                /*input 'Execute Tests?'*/
                 milestone(1)
                 withCredentials([usernamePassword(credentialsId: 'webserver_login', usernameVariable: 'USERNAME', passwordVariable: 'USERPASS')]) {
                     script {
